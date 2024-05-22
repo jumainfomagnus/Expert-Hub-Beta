@@ -1,0 +1,185 @@
+{
+  "title": "GitHub Status - Incident History",
+  "link": "https://www.githubstatus.com/",
+  "description": "Statuspage",
+  "language": "",
+  "generator": "",
+  "published": "",
+  "entries": [
+    {
+      "id": "https://www.githubstatus.com/incidents/m07hfg0gly20",
+      "title": "Incident with Actions and Pages",
+      "link": "https://www.githubstatus.com/incidents/m07hfg0gly20",
+      "published": "2024-03-15T20:28:06.000Z",
+      "description": "Mar 15, 20:28 UTCResolved - This incident has been resolved.Mar 15, 20:27 UTCUpdate - Actions is operating normally.Mar 15, 20:09 UTCUpdate - Pages is experiencing degraded performance. We are continuing to investigate.Mar 15, 20:07..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/9ym5p2sg6w5v",
+      "title": "Incident with Codespaces and API Requests",
+      "link": "https://www.githubstatus.com/incidents/9ym5p2sg6w5v",
+      "published": "2024-03-15T20:24:44.000Z",
+      "description": "Mar 15, 20:24 UTCResolved - This incident has been resolved.Mar 15, 20:21 UTCUpdate - Codespaces is operating normally.Mar 15, 20:20 UTCUpdate - API Requests is operating normally.Mar 15, 20:17 UTCUpdate - We rolled back the most recent deployment..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/q3gl44chgxwv",
+      "title": "Incident with Pull Requests",
+      "link": "https://www.githubstatus.com/incidents/q3gl44chgxwv",
+      "published": "2024-03-13T01:58:49.000Z",
+      "description": "Mar 13, 01:58 UTCResolved - From March 12, 2024 23:39 UTC to March 13, 2024 1:58 UTC, some Pull Requests updates were delayed and did not reflect the latest code that had been pushed. On average, 20% of Pull Requests page loads were out of sync and..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/fr6fgvdn41sw",
+      "title": "Incident with API Requests, Git Operations, Webhooks and Copilot",
+      "link": "https://www.githubstatus.com/incidents/fr6fgvdn41sw",
+      "published": "2024-03-12T01:00:51.000Z",
+      "description": "Mar 12, 01:00 UTCResolved - On March 11, 2024 starting at 22:45 UTC and ending on March 12, 2024 00:48 UTC various GitHub services were degraded and returned intermittent errors for users. During this incident, the following customer impacts..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/bgnqgwyj76l4",
+      "title": "Incident with Actions",
+      "link": "https://www.githubstatus.com/incidents/bgnqgwyj76l4",
+      "published": "2024-03-11T19:22:16.000Z",
+      "description": "Mar 11, 19:22 UTCResolved - On March 11, 2024 between at 18:44 UTC and 19:10 UTC, GitHub Actions performance was degraded and some users experienced errors when trying to queue workflows. Approximately 3.7% of runs queued during this time were..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/7f4bllnv3h1n",
+      "title": "Incident with Copilot",
+      "link": "https://www.githubstatus.com/incidents/7f4bllnv3h1n",
+      "published": "2024-03-11T10:20:15.000Z",
+      "description": "Mar 11, 10:20 UTCResolved - On March 11, 2024, between 06:30 UTC and 11:45 UTC the Copilot Chat service was degraded and customers may have encountered errors or timed out requests for chat interactions. On average, the error rate was 10% and..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/7x5z8plb48t6",
+      "title": "Incident with API Requests, Copilot, Git Operations, Actions and Pages",
+      "link": "https://www.githubstatus.com/incidents/7x5z8plb48t6",
+      "published": "2024-03-01T17:42:41.000Z",
+      "description": "Mar  1, 17:42 UTCResolved - On March 1, 2024, between 17:00 UTC and 17:42 UTC, we saw elevated failure rates (from 1 to 10%) for Copilot, Actions, Pages, and Git for various APIs.This incident was triggered by a newly-discovered failure mode of a..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/wcl1sw4mzg60",
+      "title": "Incident with Pull Requests, Actions and Issues",
+      "link": "https://www.githubstatus.com/incidents/wcl1sw4mzg60",
+      "published": "2024-03-01T16:12:23.000Z",
+      "description": "Mar  1, 16:12 UTCResolved - On March 1, 2024, between 14:17 UTC and 15:54 UTC the service that sends messages from our event stream into our background job processing service was degraded and delayed the transmission of jobs for processing.  No..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/5lc3f39mjcq8",
+      "title": "Incident with Issues, Webhooks and Actions",
+      "link": "https://www.githubstatus.com/incidents/5lc3f39mjcq8",
+      "published": "2024-02-29T12:27:17.000Z",
+      "description": "Feb 29, 12:27 UTCResolved - On February 29, 2024, between 9:32 and 11:54 UTC, queuing in our background job service caused processing delays to Webhooks, Actions, and Issues. Nearly 95% of delays occurred between 11:05 and 11:27 UTC, with 5% during..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/f9ntcnd3fdvs",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/f9ntcnd3fdvs",
+      "published": "2024-02-26T21:40:00.000Z",
+      "description": "Feb 26, 21:40 UTCResolved - On Monday, February 26th, from 20:45 UTC to 21:39 UTC, GitHub Packages reported an outage indicating a degradation in GitHub Container Registry and NPM package upload functionality. Upon investigation, we found a..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/78qz8zwhx9tj",
+      "title": "Incident with Webhooks, Actions, Pull Requests and Issues",
+      "link": "https://www.githubstatus.com/incidents/78qz8zwhx9tj",
+      "published": "2024-02-26T19:37:32.000Z",
+      "description": "Feb 26, 19:37 UTCResolved - On February 26, 2024, between 18:34 UTC and 19:37 UTC our background job service was degraded and caused job start delays up to 15 minutes. Users experienced delays in Webhooks, Actions, and some UI updates (e.g. a delay..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/wn6s1w8vkk1y",
+      "title": "Incident with Actions",
+      "link": "https://www.githubstatus.com/incidents/wn6s1w8vkk1y",
+      "published": "2024-02-21T17:30:06.000Z",
+      "description": "Feb 21, 17:30 UTCResolved - On Wednesday February 21, 2024, 17:07 UTC, we deployed a configuration change to one of our services inside of Actions. At 17:14 UTC we noticed an increase in exceptions that impacted approximately 85% of runs at that..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/k0qjh7s64fxk",
+      "title": "Incident with Copilot",
+      "link": "https://www.githubstatus.com/incidents/k0qjh7s64fxk",
+      "published": "2024-02-12T18:14:07.000Z",
+      "description": "Feb 12, 18:14 UTCResolved - On Monday February 12th, 2024, 03:00 UTC we deployed a code change to a component of Copilot. At 06:00 UTC we observed an increase in timeouts for code completions impacting 55% of Copilot users at peak across Asia and..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/vv6z7v5w80yr",
+      "title": "Incident with Copilot",
+      "link": "https://www.githubstatus.com/incidents/vv6z7v5w80yr",
+      "published": "2024-02-12T12:39:20.000Z",
+      "description": "Feb 12, 12:39 UTCResolved - On Monday February 12th, 2024, 03:00 UTC we deployed a code change to a component of Copilot. At 06:00 UTC we observed an increase in timeouts for code completions impacting 55% of Copilot users at peak across Asia and..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/my7r3l9lsqnk",
+      "title": "Incident with Webhooks",
+      "link": "https://www.githubstatus.com/incidents/my7r3l9lsqnk",
+      "published": "2024-02-09T11:28:59.000Z",
+      "description": "Feb  9, 11:28 UTCResolved - On February 9, 2024 between 10:34 UTC and 11:24 UTC, the Webhooks service was degraded and 63% of webhooks were delayed by up to 16 minutes with an average delay of 5 minutes. No webhook deliveries were lost. This was..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/3k40h28fkb2r",
+      "title": "Incident with Git Operations",
+      "link": "https://www.githubstatus.com/incidents/3k40h28fkb2r",
+      "published": "2024-02-05T09:53:13.000Z",
+      "description": "Feb  5, 09:53 UTCResolved - On 2024-02-05, from 09:26 to 13:20 UTC some GitHub customers experienced errors when trying to download raw files. An overloaded server exposed a bug, causing us to return HTTP 500 error codes.The issue was mitigated by..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/7k5wl5j4f1t4",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/7k5wl5j4f1t4",
+      "published": "2024-02-01T04:41:36.000Z",
+      "description": "Feb  1, 04:41 UTCResolved - An update to our design system caused issues loading dynamic content in the global side navigation menu and in other page-specific sidebar navigation elements. Impacted users saw continuous loading spinners in place of..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/5y8b8lsqbbyq",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/5y8b8lsqbbyq",
+      "published": "2024-01-31T14:57:16.000Z",
+      "description": "Jan 31, 14:57 UTCResolved - This incident was the result of an infrastructure change that was made to our load balancers to prepare us for IPv6 enablement of GitHub.com. This change was deployed to a subset of our global edge sites.The change had..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/g6drnqm54qd4",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/g6drnqm54qd4",
+      "published": "2024-01-28T14:42:55.000Z",
+      "description": "Jan 28, 14:42 UTCResolved - On January 28, 2024, between 01:00 UTC and 14:00 UTC the Avatars service was degraded and could not return all avatar images requested by users, instead it would return a default, fallback avatar image. This incident..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/bsk6hmj0d7nv",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/bsk6hmj0d7nv",
+      "published": "2024-01-23T18:53:29.000Z",
+      "description": "Jan 23, 18:53 UTCResolved - On January 23, 2024 at 14:36 UTC, our internal metrics began showing an increase in exceptions originating from our live update service. Live updates to Issues, PRs, Actions, and Projects were failing, but refreshing the..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/7ck5966p1073",
+      "title": "Incident with Codespaces",
+      "link": "https://www.githubstatus.com/incidents/7ck5966p1073",
+      "published": "2024-01-21T09:34:34.000Z",
+      "description": "Jan 21, 09:34 UTCResolved - On 2024-01-21 at 3:38 UTC, we experienced an incident that affected customers using Codespaces. Customers encountered issues creating and resuming Codespaces in multiple regions due to operational issues with compute and..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/hmvr5kpgzc45",
+      "title": "Incident with Actions",
+      "link": "https://www.githubstatus.com/incidents/hmvr5kpgzc45",
+      "published": "2024-01-21T06:19:52.000Z",
+      "description": "Jan 21, 06:19 UTCResolved - On 2024-01-21 from 02:05 UTC to 06:19 UTC, GitHub Hosted Runners experienced increased error rates from our main cloud service provider. The errors were initially limited to a single region and we were able to route..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/pxg3dz4yg7lp",
+      "title": "Incident with Issues, API Requests, Pull Requests, Actions, Pages, Git Operations, Webhooks, Packages and Codespaces",
+      "link": "https://www.githubstatus.com/incidents/pxg3dz4yg7lp",
+      "published": "2024-01-09T14:40:45.000Z",
+      "description": "Jan  9, 14:40 UTCResolved - On January 9 between 12:45 and 13:56 UTC, services in one of our three sites experienced elevated latency for connections.  This led to a sustained period of timed out requests across a number of services, including but..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/dxthh9653wkk",
+      "title": "We are investigating reports of degraded performance.",
+      "link": "https://www.githubstatus.com/incidents/dxthh9653wkk",
+      "published": "2024-01-09T05:44:37.000Z",
+      "description": "Jan  9, 05:44 UTCResolved - On January 9 between 1:06 and 5:43 UTC, no audit log events were streamed for customers that have that enabled. All events that happened during this time were delivered after the issue was mitigated. The event delivery..."
+    },
+    {
+      "id": "https://www.githubstatus.com/incidents/35pgg0gc75nv",
+      "title": "Incident with Codespaces",
+      "link": "https://www.githubstatus.com/incidents/35pgg0gc75nv",
+      "published": "2024-01-08T23:41:03.000Z",
+      "description": "Jan  8, 23:41 UTCResolved - From January 5th to January 8th, Codespaces experienced issues with port forwarding when connecting from a web browser. During this incident 100% of operations to forward ports and connect to a forwarded port failed for..."
+    }
+  ]
+}

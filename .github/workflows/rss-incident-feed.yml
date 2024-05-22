@@ -1,0 +1,126 @@
+name: Fetch Incidents Feed
+
+on:
+  schedule:
+    - cron: '10 0,12 * * *'  # Runs at midnight and noon every day
+    
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Fetch Incidents Feed
+      id: fetch-incidents
+      uses: Promptly-Technologies-LLC/rss-fetch-action@v2
+      with:
+        feed_url: 'https://www.githubstatus.com/history.rss'
+        file_path: './docs/copilot/incidents.json'
+    
+    - name: Run JavaScript to convert JSON to Markdown
+      run: |
+        echo '
+        function jsonToMarkdown(data) {
+          console.log("jsonToMarkdown")
+          const now = new Date();
+          const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+          const monthIndex = now.getMonth();
+          const monthName = months[monthIndex];
+          const day = now.getDate();
+          const hours = now.getHours();
+          const minutes = now.getMinutes();
+          const currentDateTime = `${monthName} ${day} ${hours}:${minutes}`;
+
+          let markdown = [];
+          
+          markdown.push("Last updated: "+ currentDateTime );
+          markdown.push("");
+          markdown.push("# Copilot Incidents");
+          markdown.push("");
+          markdown.push("The GitHub Copilot Incident information is sourced of the [GitHub Status Page](https://www.githubstatus.com/), a place where you can find information about the current status of GitHub Copilot, as well as information about past incidents.");
+          markdown.push("");  
+          markdown.push("(Copilot specific incidents are prefixed with a :warning:)");  
+          markdown.push("");  
+          markdown.push("## " + data.title);
+          markdown.push("");
+          markdown.push("Link: [" + data.link + "](" + data.link + ")");
+          markdown.push("");
+          markdown.push(data.description);
+          markdown.push("");
+          markdown.push("| Title | Published | Description |");
+          markdown.push("| --- | --- | --- |");
+          
+          data.entries.forEach(entry => {
+            const { title, published, description } = entry;
+            const formattedDate = new Date(published).toLocaleString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "2-digit"
+            });
+            const hasCopilot = title.toLowerCase().includes("copilot");
+            markdown.push("| " + (hasCopilot ? ":warning: " : "") + title + " | " + formattedDate + " | " + description + " |");
+          });
+          
+          return markdown.join("\n"); // Join with newline character
+        }
+
+        // Update the 'Welcome' page with information about current copilot incidents
+        function updateTargetFile(searchString, targetFilePath, jsonFilePath) {
+            console.log("updateTargetFile")
+            // Read JSON file
+            const jsonData = require(jsonFilePath);
+        
+            // Find matching entry in JSON
+            const matchingEntry = jsonData.entries.find(entry => entry.title.toLowerCase().includes(searchString.toLowerCase()));
+        
+            if (matchingEntry) {
+                // Read target file
+                fs.readFile(targetFilePath, "utf8", (err, data) => {
+                    if (err) {
+                        console.error("Error reading target file:", err);
+                        return;
+                    }
+        
+                    // Replace placeholder with JSON entry
+                    const updatedContent = data.replace("<placeholder>", JSON.stringify(matchingEntry, null, 2));
+        
+                    // Write updated content back to target file
+                    fs.writeFile(targetFilePath, updatedContent, "utf8", (err) => {
+                        if (err) {
+                            console.error("Error writing to target file:", err);
+                            return;
+                        }
+        
+                        console.log("Target file updated successfully!");
+                    });
+                });
+            } else {
+                console.log("No matching entry found in JSON file.");
+            }
+        }
+        
+        const jsonData = require("./docs/copilot/incidents.json");
+        const markdownContent = jsonToMarkdown(jsonData);
+        console.log("markdownContent: "+ `markdownContent`);
+
+        const fs = require("fs");
+
+        // Example usage:
+        // updateTargetFile("Copilot", "docs/README.md", "./docs/copilot/incidents.json");
+
+        fs.writeFileSync("./docs/copilot/copilot-incidents.md", markdownContent, "utf8");' | node
+
+    - name: Commit changes to repository
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update RSS feed"
+        
+    - name: Push to protected branch
+      uses: CasperWA/push-protected@v2
+      with:
+        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+        branch: main

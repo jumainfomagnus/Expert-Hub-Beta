@@ -1,0 +1,79 @@
+name: Fetch Changelog Feed
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *'  # Runs at midnight and noon every day
+    
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Fetch Changelog Feed
+      id: fetch-rss
+      uses: Promptly-Technologies-LLC/rss-fetch-action@v2
+      with:
+        feed_url: 'https://github.blog/changelog/label/copilot/feed/'
+        file_path: './docs/copilot/changelog.json'
+    
+    - name: Run JavaScript to convert JSON to Markdown
+      run: |
+        echo '
+        function jsonToMarkdown(data) {
+          const now = new Date();
+          const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+          const monthIndex = now.getMonth();
+          const monthName = months[monthIndex];
+          const day = now.getDate();
+          const hours = now.getHours();
+          const minutes = now.getMinutes();
+          const currentDateTime = `${monthName} ${day} ${hours}:${minutes}`;
+          
+          let markdown = [];
+          markdown.push("");
+          markdown.push("Last updated: "+ currentDateTime );
+          markdown.push("");
+          markdown.push("# " + data.title.toUpperCase()); // Convert title to uppercase
+          markdown.push("");
+          markdown.push("Link: [" + data.link + "](" + data.link + ")");
+          markdown.push("");
+          markdown.push(data.description);
+          markdown.push("");
+          markdown.push("| Title | Published | Description |");
+          markdown.push("| --- | --- | --- |");
+          
+          data.entries.forEach(entry => {
+            const { title, published, description } = entry;
+            const formattedDate = new Date(published).toLocaleString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "2-digit"
+            });
+            markdown.push("| " + title + " | " + formattedDate + " | " + description + " |");
+          });
+          
+          return markdown.join("\n"); // Join with newline character
+        }
+
+        const jsonData = require("./docs/copilot/changelog.json");
+        const markdownContent = jsonToMarkdown(jsonData);
+
+        const fs = require("fs");
+
+        fs.writeFileSync("./docs/copilot/copilot-changelog.md", markdownContent, "utf8");' | node
+
+    - name: Commit changes to repository
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update RSS feed"
+        
+    - name: Push to protected branch
+      uses: CasperWA/push-protected@v2
+      with:
+        token: ${{ secrets.PUSH_TO_PROTECTED_BRANCH }}
+        branch: main

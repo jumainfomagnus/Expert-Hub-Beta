@@ -1,0 +1,80 @@
+{
+  "title": "copilot Archives - The GitHub Blog",
+  "link": "https://github.blog/changelog/label/copilot/",
+  "description": "Updates, ideas, and inspiration from GitHub to help developers build and design software.",
+  "language": "en-US",
+  "generator": "https://wordpress.org/?v=6.4.3",
+  "published": "2024-03-07T17:39:24.000Z",
+  "entries": [
+    {
+      "id": "https://github.blog/changelog/2024-03-07-github-copilot-chat-general-availability-in-jetbrains-ide",
+      "title": "GitHub Copilot Chat General Availability in JetBrains IDE",
+      "link": "https://github.blog/changelog/2024-03-07-github-copilot-chat-general-availability-in-jetbrains-ide",
+      "published": "2024-03-07T17:19:12.000Z",
+      "description": "GitHub Copilot Chat General Availability in JetBrains IDE The post GitHub Copilot Chat General Availability in JetBrains IDE appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-02-27-copilot-february-15th-update",
+      "title": "Copilot – February 27th update",
+      "link": "https://github.blog/changelog/2024-02-27-copilot-february-27th-update",
+      "published": "2024-02-27T20:26:51.000Z",
+      "description": "Copilot - February 15th update The post Copilot &#8211; February 27th update appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-02-27-copilot-enterprise-is-now-generally-available",
+      "title": "GitHub Copilot Enterprise is now generally available",
+      "link": "https://github.blog/changelog/2024-02-27-copilot-enterprise-is-now-generally-available",
+      "published": "2024-02-27T16:48:31.000Z",
+      "description": "Copilot Enterprise is now generally available The post GitHub Copilot Enterprise is now generally available appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-02-09-copilot-in-github-support-ga",
+      "title": "Copilot in GitHub Support (GA)",
+      "link": "https://github.blog/changelog/2024-02-09-copilot-in-github-support-ga",
+      "published": "2024-02-09T17:42:56.000Z",
+      "description": "Copilot in GitHub Support (GA) The post Copilot in GitHub Support (GA) appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-01-30-code-faster-and-better-with-github-copilots-new-features-in-visual-studio",
+      "title": "Code faster and better with GitHub Copilot’s new features in Visual Studio",
+      "link": "https://github.blog/changelog/2024-01-30-code-faster-and-better-with-github-copilots-new-features-in-visual-studio",
+      "published": "2024-01-30T22:06:00.000Z",
+      "description": "Code faster and better with GitHub Copilot’s new features in Visual Studio The post Code faster and better with GitHub Copilot’s new features in Visual Studio appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-01-18-copilot-january-18th-update",
+      "title": "Copilot – January 18th update",
+      "link": "https://github.blog/changelog/2024-01-18-copilot-january-18th-update",
+      "published": "2024-01-18T18:25:54.000Z",
+      "description": "Copilot - January 18th update The post Copilot &#8211; January 18th update appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-01-18-copilot-content-exclusions-feature-update",
+      "title": "Copilot Content Exclusions Feature Update",
+      "link": "https://github.blog/changelog/2024-01-18-copilot-content-exclusions-feature-update",
+      "published": "2024-01-18T08:06:34.000Z",
+      "description": "Copilot Content Exclusions Feature Update The post Copilot Content Exclusions Feature Update appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2024-01-10-whats-new-in-copilot-enterprise-beta-january-10th-update",
+      "title": "Copilot Enterprise beta – January 10th update",
+      "link": "https://github.blog/changelog/2024-01-10-whats-new-in-copilot-enterprise-beta-january-10th-update",
+      "published": "2024-01-10T23:45:31.000Z",
+      "description": "What's new in Copilot Enterprise beta - January 10th update The post Copilot Enterprise beta &#8211; January 10th update appeared first on The GitHub Blog."
+    },
+    {
+      "id": "https://github.blog/changelog/2023-11-30-auto-draft",
+      "title": "GitHub Copilot – November 30th Update",
+      "link": "https://github.blog/changelog/2023-11-30-github-copilot-november-30th-update",
+      "published": "2023-11-30T17:50:24.000Z",
+      "description": "This month, we made some big improvements to GitHub Copilot! Copilot Chat is now powered by GPT-4 and we updated the model used to detect off-topic chat queries. In VS Code, we are announcing the public beta of code referencing. We also introduced..."
+    },
+    {
+      "id": "https://github.blog/changelog/2023-11-20-auto-draft",
+      "title": "Copilot content exclusions – Temporary rollback and upcoming fix",
+      "link": "https://github.blog/changelog/2023-11-20-copilot-content-exclusions-temporary-rollback-and-upcoming-fix",
+      "published": "2023-11-20T14:26:27.000Z",
+      "description": "Shortly after releasing Copilot content exclusions on November 8, 2023, our team observed that the feature was causing clients to be incorrectly blocked from using Copilot. This necessitated an immediate rollback of this feature. What Happened?..."
+    }
+  ]
+}
